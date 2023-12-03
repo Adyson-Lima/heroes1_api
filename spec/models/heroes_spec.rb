@@ -11,6 +11,11 @@ RSpec.describe Hero, type: :model do
       expect(@hero.name).to eq('super homem')
     end
 
+    it 'power consegue ser preenchido?' do
+      @hero.power = ''
+      expect(@hero.power).to eq('variados')
+    end
+
   end
 
 end
